@@ -28,3 +28,5 @@ Stretch-Goals:
 * List of previous play dates
 
 * Confirmation emails for new profiles?
+
+* Display the distance of a "match" -> would need to add zipcode, address, etc to profiles.

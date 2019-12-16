@@ -1,0 +1,120 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  :root {
+    font: 16px / 1 sans-serif;
+  }
+
+  html {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #f1f1f1;
+    font-family: 'Righteous', cursive;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    height: 3rem;
+    background-color: #dca4fc;
+    padding: 0;
+  }
+  nav li {
+    list-style: none;
+    padding: 0.5rem;
+    color: white;
+  }
+  .Nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  /* Dog profile Stylings */
+  .dog-profile-image {
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    border-bottom-left-radius: 25px;
+  }
+  .profile-image {
+    height: 12rem;
+    width: 8rem;
+    margin: 0;
+    border-radius: 8px;
+  }
+  .profile-about {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-about h1 {
+    align-self: center;
+  }
+
+  .profile-about span {
+    align-self: center;
+    padding: 0.2rem;
+  }
+  .in-between {
+    border-top: solid lightgrey;
+    border-bottom: solid lightgrey;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-logo {
+    margin: 0.5rem;
+    height: 2rem;
+    width: auto;
+  }
+
+  /* Dog Landing Stylings */
+  .doggo-landing-body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #f1f1f1;
+    font-family: 'Righteous', cursive;
+  }
+  .landing-page-logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .doggo-logo {
+    height: 180px;
+    width: 238px;
+    align-self: center;
+  }
+  .doggo-text-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .doggo-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+  }
+
+  .landing-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .create-account {
+    background-color: purple;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 25px;
+    border: 3px solid black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  .existing-users {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+    align-content: center;
+  }
+}

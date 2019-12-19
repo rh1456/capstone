@@ -14,12 +14,12 @@ const App = () => {
             <li className="nav-logo">Doggo</li>
             <li>
               <Link className="Nav-link" to="/">
-                Login
+                Home
               </Link>
             </li>
             <li>
               <Link className="Nav-link" to="/1">
-                Home
+                Login
               </Link>
             </li>
             <li>

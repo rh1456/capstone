@@ -14,12 +14,12 @@ const App = () => {
             <li className="nav-logo">Doggo</li>
             <li>
               <Link className="Nav-link" to="/">
-                Login
+                Home
               </Link>
             </li>
             <li>
               <Link className="Nav-link" to="/1">
-                Home
+                Login
               </Link>
             </li>
             <li>
@@ -36,8 +36,8 @@ const App = () => {
         </nav>
       </header>
       <Switch>
-        <Route exact path="/" component={DoggoLandingPage}></Route>
-        <Route exact path="/1" component={MainPage}></Route>
+        <Route exact path="/1" component={DoggoLandingPage}></Route>
+        <Route exact path="/" component={MainPage}></Route>
         <Route exact path="/2" component={CreateAccount}></Route>
         <Route path="/3" component={DogProfile}></Route>
       </Switch>

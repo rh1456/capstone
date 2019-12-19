@@ -38,18 +38,7 @@
   .dog-profile-image {
     display: flex;
     justify-content: center;
-    /* border-bottom: solid lightgrey; */
-  }
-  .before-div {
-    border: solid black;
-    display: block;
-    height: 18px;
-    border-radius: 50% 50% 0 0;
-
-    bottom: calc(100% - 10px);
-    right: -5px;
-    left: -5px;
-    background-color: blue;
+    border-bottom: solid lightgrey;
   }
   .profile-image {
     height: 12rem;
@@ -181,43 +170,13 @@
     border: 3px solid black;
     color: white;
   }
-
   /* Newsfeed Stylings */
   .newsfeed-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: solid lightgrey;
     height: 9rem;
   }
   .friend-card {
     border: solid black;
-    align-self: center;
-    margin: 1rem 3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 0.5rem;
-    flex-basis: 70%;
-    height: 5rem;
-    /* width: 1rem; */
-  }
-  .feed-head-left-button,
-  .feed-head-right-button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color: white;
-    font-size: 2rem;
-    width: 5rem;
-    margin: 8rem 0rem;
-    background-color: purple;
-    border: none;
-  }
-  .feed-head-left-button {
-    border-radius: 0rem 1rem 1rem 0rem;
-  }
-  .feed-head-right-button {
-    border-radius: 1rem 0rem 0rem 1rem;
+    height: 60px;
   }
 }

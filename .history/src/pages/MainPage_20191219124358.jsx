@@ -8,11 +8,10 @@ const MainPage = () => {
           <i class="fas fa-angle-left"></i>
         </button>
         <div className="friend-card"></div>
-        <button className="feed-head-right-button">
+        <button>
           <i class="fas fa-angle-right"></i>
         </button>
       </header>
-      <section className="newsfeed"></section>
     </div>
   )
 }

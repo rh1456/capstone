@@ -12,7 +12,6 @@ const MainPage = () => {
           <i class="fas fa-angle-right"></i>
         </button>
       </header>
-      <section className="newsfeed"></section>
     </div>
   )
 }

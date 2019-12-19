@@ -181,7 +181,6 @@
     border: 3px solid black;
     color: white;
   }
-
   /* Newsfeed Stylings */
   .newsfeed-header {
     display: flex;
@@ -198,26 +197,14 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     border-radius: 0.5rem;
-    flex-basis: 70%;
+    flex-basis: 80%;
     height: 5rem;
-    /* width: 1rem; */
+    width: 3rem;
   }
-  .feed-head-left-button,
-  .feed-head-right-button {
+  .feed-head-left-button {
     display: flex;
     justify-content: center;
     align-content: center;
-    color: white;
-    font-size: 2rem;
-    width: 5rem;
-    margin: 8rem 0rem;
     background-color: purple;
-    border: none;
-  }
-  .feed-head-left-button {
-    border-radius: 0rem 1rem 1rem 0rem;
-  }
-  .feed-head-right-button {
-    border-radius: 1rem 0rem 0rem 1rem;
   }
 }

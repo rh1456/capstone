@@ -26,23 +26,18 @@ const MainPage = () => {
       <div className="newsfeed">
         <div class="card">
           <h2>Friend</h2>
-          <span>status</span>
         </div>
         <div class="card">
           <h2>Friend</h2>
-          <span>status</span>
         </div>
         <div class="card">
           <h2>Friend</h2>
-          <span>status</span>
         </div>
         <div class="card">
           <h2>Friend</h2>
-          <span>status</span>
         </div>
         <div class="card">
           <h2>Friend</h2>
-          <span>status</span>
         </div>
       </div>
     </div>

@@ -23,28 +23,26 @@ const MainPage = () => {
           </span>
         </h1>
       </section>
-      <div className="newsfeed">
+      <section className="newsfeed">
         <div class="card">
-          <h2>Friend</h2>
-          <span>status</span>
+          <h2>Card</h2>
         </div>
         <div class="card">
-          <h2>Friend</h2>
-          <span>status</span>
+          <h2>Card</h2>
         </div>
         <div class="card">
-          <h2>Friend</h2>
-          <span>status</span>
+          <h2>Card</h2>
         </div>
         <div class="card">
-          <h2>Friend</h2>
-          <span>status</span>
+          <h2>Card</h2>
         </div>
         <div class="card">
-          <h2>Friend</h2>
-          <span>status</span>
+          <h2>Card</h2>
         </div>
-      </div>
+        <div class="card">
+          <h2>Card</h2>
+        </div>
+      </section>
     </div>
   )
 }

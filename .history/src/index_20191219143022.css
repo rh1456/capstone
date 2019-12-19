@@ -232,14 +232,14 @@
     display: flex;
     justify-content: center;
     font-size: 0.7rem;
-    /* border-bottom: solid lightgrey; */
+    border-bottom: solid lightgrey;
   }
   .newsfeed {
     align-items: stretch;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
   }
   .card {

@@ -15,11 +15,6 @@ const MainPage = () => {
           <i class="fas fa-angle-right"></i>
         </button>
       </header>
-      <section className="welcome-user-message">
-        <h1 className="welcome-h1">
-          Welcome <span>Liz</span>
-        </h1>
-      </section>
       <section className="newsfeed"></section>
     </div>
   )

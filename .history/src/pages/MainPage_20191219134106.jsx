@@ -16,9 +16,7 @@ const MainPage = () => {
         </button>
       </header>
       <section className="welcome-user-message">
-        <h1 className="welcome-h1">
-          Welcome <span>Liz</span>
-        </h1>
+        <h1 className="welcome-h1">Welcome</h1>
       </section>
       <section className="newsfeed"></section>
     </div>

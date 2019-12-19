@@ -228,10 +228,4 @@
   .feed-head-right-button {
     border-radius: 1rem 0rem 0rem 1rem;
   }
-  .welcome-user-message {
-    display: flex;
-    justify-content: center;
-    font-size: 0.7rem;
-    border-bottom: solid lightgrey;
-  }
 }

@@ -241,7 +241,6 @@
   .newsfeed-parent {
     display: flex;
     justify-content: center;
-    margin: 1rem;
   }
   .newsfeed {
     /* align-items: stretch; */
@@ -267,14 +266,12 @@
   .newsfeed-nav-ul {
     display: flex;
     flex-direction: row;
-    font-size: smaller;
-    font-style: italic;
+
     margin: 0rem;
     height: 2rem;
   }
   .newsfeed-nav-li {
     list-style: none;
-    margin: 0;
     padding: 1rem;
   }
 }

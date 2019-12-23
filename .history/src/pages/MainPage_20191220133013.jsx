@@ -21,10 +21,10 @@ const MainPage = () => {
         </h1>
       </section>
       <nav>
-        <ul className="newsfeed-nav-ul">
-          <li className="newsfeed-nav-li">Profile Settings</li>
-          <li className="newsfeed-nav-li">Upcoming Play Dates</li>
-          <li className="newsfeed-nav-li">Past Play Dates</li>
+        <ul>
+          <li>Upcoming Play Dates</li>
+          <li>Past Play Dates</li>
+          <li>Profile Settings</li>
         </ul>
       </nav>
       <div className="newsfeed-parent">

@@ -17,7 +17,7 @@ const DoggoLandingPage = () => {
           <button className="create-account">Create Account</button>
         </section>
         <section className="existing-users">
-          <Link to="./CreateAccount">Existing Users Click Here</Link>
+          <Link to="/2">Existing Users Click Here</Link>
         </section>
       </main>
       {/* <Switch>

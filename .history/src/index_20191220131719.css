@@ -21,7 +21,7 @@
     background-color: #dca4fc;
     padding: 0;
   }
-  .main-nav-li {
+  nav li {
     list-style: none;
     padding: 0.5rem;
     color: white;
@@ -241,7 +241,6 @@
   .newsfeed-parent {
     display: flex;
     justify-content: center;
-    margin: 1rem;
   }
   .newsfeed {
     /* align-items: stretch; */
@@ -263,19 +262,6 @@
     /* flex-basis: 33.33%;
     flex-grow: 0;
     flex-shrink: 0; */
-  }
-  .newsfeed-nav-ul {
-    display: flex;
-    flex-direction: row;
-    font-size: smaller;
-    font-style: italic;
-    margin: 0rem;
-    height: 2rem;
-  }
-  .newsfeed-nav-li {
-    list-style: none;
-    margin: 0;
-    padding: 1rem;
   }
 }
 
@@ -303,14 +289,12 @@ body {
   background-color: #dca4fc;
   padding: 0;
 }
-.main-nav-li {
+nav li {
   list-style: none;
   padding: 0.5rem;
   color: white;
 }
 .nav-logo {
-  padding: 0.5rem;
-  color: white;
   font-size: 1.4rem;
   font-family: 'Lobster', cursive;
 }

@@ -6,6 +6,7 @@ const DogProfile = () => {
     <div className="dog-profile-div">
       <header className="dog-profile-image">
         <img className="profile-image" src={Z} alt="Z" />
+        <div className="before-div"></div>
       </header>
       <section className="profile-about">
         <h1>Liz</h1>

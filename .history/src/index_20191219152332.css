@@ -21,7 +21,7 @@
     background-color: #dca4fc;
     padding: 0;
   }
-  .main-nav-li {
+  nav li {
     list-style: none;
     padding: 0.5rem;
     color: white;
@@ -241,7 +241,6 @@
   .newsfeed-parent {
     display: flex;
     justify-content: center;
-    margin: 1rem;
   }
   .newsfeed {
     /* align-items: stretch; */
@@ -250,7 +249,7 @@
     flex-wrap: nowrap; */
     /* display: flex;
     justify-content: center; */
-    width: 300px;
+    width: 120px;
     height: 500px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -264,22 +263,7 @@
     flex-grow: 0;
     flex-shrink: 0; */
   }
-  .newsfeed-nav-ul {
-    display: flex;
-    flex-direction: row;
-    font-size: smaller;
-    font-style: italic;
-    margin: 0rem;
-    height: 2rem;
-  }
-  .newsfeed-nav-li {
-    list-style: none;
-    margin: 0;
-    padding: 1rem;
-  }
 }
-
-/* End of mobile query  */
 
 :root {
   font: 16px / 1 sans-serif;
@@ -303,14 +287,12 @@ body {
   background-color: #dca4fc;
   padding: 0;
 }
-.main-nav-li {
+nav li {
   list-style: none;
   padding: 0.5rem;
   color: white;
 }
 .nav-logo {
-  padding: 0.5rem;
-  color: white;
   font-size: 1.4rem;
   font-family: 'Lobster', cursive;
 }
@@ -496,7 +478,7 @@ body {
   flex-grow: 0;
   flex-shrink: 0;
   height: 4.7rem;
-  width: 1rem;
+  /* width: 1rem; */
 }
 /* .feed-head-left-button,
   .feed-head-right-button {
@@ -515,7 +497,7 @@ body {
   }
   .feed-head-right-button {
     border-radius: 1rem 0rem 0rem 1rem;
-  }  */
+  } */
 .welcome-user-message {
   display: flex;
   justify-content: center;
@@ -525,17 +507,16 @@ body {
 .newsfeed-parent {
   display: flex;
   justify-content: center;
-  align-content: center;
 }
 .newsfeed {
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  display: flex;
-  justify-content: center;
-  width: 120px;
-  height: 400px;
+  /* align-items: stretch; */
+  /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
+  /* display: flex;
+    justify-content: center; */
+  width: 300px;
+  height: 500px;
   overflow-y: scroll;
   overflow-x: hidden;
 }

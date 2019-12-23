@@ -241,7 +241,6 @@
   .newsfeed-parent {
     display: flex;
     justify-content: center;
-    margin: 1rem;
   }
   .newsfeed {
     /* align-items: stretch; */

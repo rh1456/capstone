@@ -17,12 +17,12 @@ const DoggoLandingPage = () => {
           <button className="create-account">Create Account</button>
         </section>
         <section className="existing-users">
-          <Link to="./CreateAccount">Existing Users Click Here</Link>
+          <Link to="/4">Existing Users Click Here</Link>
         </section>
       </main>
-      {/* <Switch>
+      <Switch>
         <Route exact path="/4" component={CreateAccount}></Route>
-      </Switch> */}
+      </Switch>
     </Router>
   )
 }

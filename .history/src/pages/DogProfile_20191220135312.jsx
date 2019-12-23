@@ -6,13 +6,14 @@ const DogProfile = () => {
     <div className="dog-profile-div">
       <header className="dog-profile-image">
         <img className="profile-image" src={Z} alt="Z" />
+        <div className="before-div"></div>
       </header>
       <section className="profile-about">
         <h1>Liz</h1>
         <span>Young</span>
         <span>Labrador/Pit Mix</span>
       </section>
-      <section className="in-between">
+      {/* <section className="in-between"> */}
         <img className="profile-logo" src={Logo} alt="" />
       </section>
       <section className="main-about">

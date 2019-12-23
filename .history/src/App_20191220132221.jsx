@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 import MainPage from './pages/MainPage'
 import DoggoLandingPage from './pages/DoggoLandingPage'
-import CreateAccount from './pages/CreateAccount'
+import CreateAccount from './pages/CreateAccout'
 import DogProfile from './pages/DogProfile'
 
 const App = () => {

@@ -1,8 +1,6 @@
 import React from 'react'
 import Z from './z-pic.jpg'
 import Logo from './Logo.png'
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-
 const DogProfile = () => {
   return (
     <div className="dog-profile-div">
@@ -31,11 +29,7 @@ const DogProfile = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
           dolores laboriosam, nihil, optio explicabo delectus dicta expedita
         </p>
-        <button className="match-button">
-          <Link className="playdate-link" to="/4">
-            Make a Playdate!
-          </Link>
-        </button>
+        <button className="match-button">Make a Playdate!</button>
       </section>
     </div>
   )

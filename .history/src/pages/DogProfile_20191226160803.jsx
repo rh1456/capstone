@@ -1,8 +1,6 @@
 import React from 'react'
 import Z from './z-pic.jpg'
 import Logo from './Logo.png'
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-
 const DogProfile = () => {
   return (
     <div className="dog-profile-div">

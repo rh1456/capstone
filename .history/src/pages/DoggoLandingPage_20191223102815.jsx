@@ -21,9 +21,7 @@ const DoggoLandingPage = () => {
         </button>
       </section>
       <section className="existing-users">
-        <Link className="existing-users-link" to="/1">
-          Existing Users Click Here
-        </Link>
+        <Link to="/2">Existing Users Click Here</Link>
       </section>
     </main>
     //   <Switch>

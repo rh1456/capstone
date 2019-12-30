@@ -115,10 +115,6 @@
     border: 3px solid black;
     color: white;
   }
-  .playdate-link {
-    color: white;
-    text-decoration: none;
-  }
 
   /* Dog Landing Stylings */
   .doggo-landing-body {
@@ -147,7 +143,6 @@
     justify-content: center;
     align-content: center;
     font-size: 2rem;
-    font-family: 'Lobster', cursive;
   }
 
   .landing-button {
@@ -163,11 +158,6 @@
     border: 3px solid black;
     color: white;
     font-family: 'Roboto', sans-serif;
-  }
-  .create-account-link {
-    color: white;
-    text-decoration: none;
-    font-style: bold;
   }
   .existing-users {
     display: flex;
@@ -190,10 +180,6 @@
     border-radius: 25px;
     border: 3px solid black;
     color: white;
-  }
-  .existing-users-link {
-    font-style: italic;
-    text-decoration: none;
   }
 
   /* Newsfeed Stylings */
@@ -228,7 +214,24 @@
     height: 4.7rem;
     /* width: 1rem; */
   }
-
+  /* .feed-head-left-button,
+  .feed-head-right-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 2rem;
+    width: 2.5rem;
+    margin: 4rem 0rem;
+    background-color: purple;
+    border: none;
+  }
+  .feed-head-left-button {
+    border-radius: 0rem 1rem 1rem 0rem;
+  }
+  .feed-head-right-button {
+    border-radius: 1rem 0rem 0rem 1rem;
+  } */
   .welcome-user-message {
     display: flex;
     justify-content: center;
@@ -276,35 +279,7 @@
     padding: 1rem;
   }
   .mapbox {
-    align-self: center;
     border: solid black;
-    height: 6rem;
-    width: 6rem;
-  }
-  /* Playdate form stylings  */
-
-  .playdate-header {
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem;
-  }
-  .playdate-main {
-    display: flex;
-    flex-direction: column;
-  }
-  .playdate-input {
-    align-self: center;
-    margin: 0.5rem;
-  }
-  .form-date-submit-button {
-    margin-top: 1rem;
-    align-self: center;
-    background-color: purple;
-    height: 1.8rem;
-    width: 8rem;
-    border-radius: 25px;
-    border: 3px solid black;
-    color: white;
   }
 }
 

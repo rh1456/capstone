@@ -8,18 +8,10 @@ const MainPage = () => {
         <h1 className="matches-h1">Matches</h1>
       </section>
       <header className="newsfeed-header">
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
+        <button className="friend-card">Match</button>
+        <button className="friend-card">Match</button>
+        <button className="friend-card">Match</button>
+        <button className="friend-card">Match</button>
       </header>
       <section className="welcome-user-message">
         <h1 className="welcome-h1">

@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 
 const MainPage = () => {
   return (
@@ -8,18 +7,10 @@ const MainPage = () => {
         <h1 className="matches-h1">Matches</h1>
       </section>
       <header className="newsfeed-header">
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
+        <div className="friend-card">Match</div>
+        <div className="friend-card">Match</div>
+        <div className="friend-card">Match</div>
+        <div className="friend-card">Match</div>
       </header>
       <section className="welcome-user-message">
         <h1 className="welcome-h1">
@@ -32,9 +23,7 @@ const MainPage = () => {
       <nav>
         <ul className="newsfeed-nav-ul">
           <li className="newsfeed-nav-li">
-            <Link className="settings-link" to="/5">
-              Profile Settings
-            </Link>
+            <Link to="/5">Profile Settings</Link>
           </li>
           <li className="newsfeed-nav-li">Upcoming Play Dates</li>
           <li className="newsfeed-nav-li">Past Play Dates</li>

@@ -11,15 +11,9 @@ const MainPage = () => {
         <button className="friend-card">
           <Link to="/3">Match</Link>
         </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
-        <button className="friend-card">
-          <Link to="/3">Match</Link>
-        </button>
+        <button className="friend-card">Match</button>
+        <button className="friend-card">Match</button>
+        <button className="friend-card">Match</button>
       </header>
       <section className="welcome-user-message">
         <h1 className="welcome-h1">

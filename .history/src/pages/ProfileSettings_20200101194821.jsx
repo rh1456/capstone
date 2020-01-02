@@ -17,10 +17,6 @@ const ProfileSettings = () => {
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
-        <section className="update-account-details">
-          <label htmlFor="Age">Age</label>
-          <input input="text"></input>
-        </section>
       </section>
     </div>
   )

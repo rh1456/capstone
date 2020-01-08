@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 const CreateAccount = () => {
   const [name, setName] = useState('')

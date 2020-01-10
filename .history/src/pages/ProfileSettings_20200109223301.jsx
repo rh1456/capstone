@@ -4,7 +4,7 @@ const ProfileSettings = () => {
   return (
     <div>
       <header className="setting-header">
-        <span>Dog's Name</span>'s Profile
+        <span>Dog's Name</span>
       </header>
       <section className="setings-section">
         <p className="settings-p">Settings</p>

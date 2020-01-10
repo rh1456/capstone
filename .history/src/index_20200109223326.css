@@ -313,13 +313,11 @@
   /* Profile setting styling  */
   .setting-header {
     display: flex;
-
-    padding: 0.3rem;
+    justify-content: center;
   }
   .settings-p {
     display: flex;
-    padding: 0.5rem;
-    font-size: 2rem;
+    justify-content: center;
   }
 }
 

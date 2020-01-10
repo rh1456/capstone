@@ -4,11 +4,8 @@ const ProfileSettings = () => {
   return (
     <div>
       <header className="setting-header">
-        <span>Dog's Name</span>'s Profile
+        <span>Dog's Name</span>
       </header>
-      <section className="setings-section">
-        <p className="settings-p">Settings</p>
-      </section>
       <section className="update-account-details">
         <label htmlFor="dogs-name">Update Name</label>
         <input type="text"></input>

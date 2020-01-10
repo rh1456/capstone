@@ -7,7 +7,6 @@ const CreateAccount = () => {
   const [breed, setBreed] = useState('')
   const [size, setSize] = useState('')
   const [about, setAbout] = useState('')
-  const [email, setEmail] = useState('')
   return (
     <div className="create-account-div">
       <h1>Create Account</h1>

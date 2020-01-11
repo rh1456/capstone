@@ -39,11 +39,7 @@ const ProfileSettings = () => {
           <label className="update-label" htmlFor="Age">
             {/* Age */}
           </label>
-          <input
-            placeholder="Age"
-            className="basic-slide"
-            type="number"
-          ></input>
+          <input placeholder="Age" className="basic-slide" input="text"></input>
         </section>
       </div>
     </>

@@ -42,7 +42,7 @@ const ProfileSettings = () => {
           <input
             placeholder="Age"
             className="basic-slide"
-            type="number"
+            input="number"
           ></input>
         </section>
       </div>

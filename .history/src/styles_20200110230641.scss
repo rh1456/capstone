@@ -20,9 +20,35 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 60px 30px;
-  background: #032429;
+  background: #f1f1f1;
   @include epic-sides() {
     background: inherit;
   }
   text-align: center;
+
+  &:first-child {
+    padding: 40px 30px;
+  }
+  &:nth-child(2),
+  &:nth-child(8),
+  &:nth-child(10) {
+    background: #134a46;
+  }
+  &:nth-child(3),
+  &:nth-child(7) {
+    background: #377d6a;
+  }
+  &:nth-child(4),
+  &:nth-child(6) {
+    background: #7ab893;
+  }
+  &:nth-child(5) {
+    background: #b2e3af;
+  }
+
+  span {
+    position: relative;
+    display: inline-block;
+    margin: 30px 10px;
+  }
 }

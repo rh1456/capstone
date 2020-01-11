@@ -13,7 +13,7 @@ const ProfileSettings = () => {
       <div className="profile-settings-container">
         <section className="update-account-details">
           <label className="update-label" htmlFor="dogs-name">
-            {/* Update Name */}
+            Update Name
           </label>
           <input
             className="basic-slide"
@@ -23,7 +23,7 @@ const ProfileSettings = () => {
         </section>
         <section className="update-account-details">
           <label className="update-label" htmlFor="gender">
-            {/* Update Gender */}
+            Update Gender
           </label>
           <select
             placeholder="Update Gender"
@@ -37,13 +37,9 @@ const ProfileSettings = () => {
         </section>
         <section className="update-account-details">
           <label className="update-label" htmlFor="Age">
-            {/* Age */}
+            Age
           </label>
-          <input
-            placeholder="Age"
-            className="basic-slide"
-            type="number"
-          ></input>
+          <input placeholder="Age" className="basic-slide" input="text"></input>
         </section>
       </div>
     </>

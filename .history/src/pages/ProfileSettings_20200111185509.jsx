@@ -5,8 +5,7 @@ const ProfileSettings = () => {
   return (
     <>
       <header className="setting-header">
-        <span>Dog's Name</span>
-        <p className="settings-p">Settings</p>
+        <span>Dog's Name</span>'<p className="settings-p">Settings</p>
       </header>
       <div className="profile-settings-container">
         <section className="update-account-details">

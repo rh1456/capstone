@@ -5,9 +5,11 @@ const ProfileSettings = () => {
   return (
     <>
       <header className="setting-header">
-        <span>Dog's Name</span>
-        <p className="settings-p">Settings</p>
+        <span>Dog's Name</span>'s Profile
       </header>
+      <section className="settings-section">
+        <p className="settings-p">Settings</p>
+      </section>
       <div className="profile-settings-container">
         <section className="update-account-details">
           <label className="update-label" htmlFor="dogs-name">
@@ -25,7 +27,7 @@ const ProfileSettings = () => {
           </label>
           <select
             placeholder="Update Gender"
-            className="basic-slide"
+            // className="basic-slide"
             type="text"
           >
             <option value="">Update Gender</option>

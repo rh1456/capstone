@@ -38,7 +38,7 @@
   transition: all 0.3s;
 }
 .basic-slide:placeholder-shown + .update-label {
-  opacity: 3;
+  opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
   transform: translateY(-4rem);
@@ -52,7 +52,4 @@
 .settings-p {
   font-size: 2rem;
   margin: 2rem;
-}
-span {
-  margin: 1rem;
 }

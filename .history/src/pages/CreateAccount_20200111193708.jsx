@@ -14,11 +14,7 @@ const CreateAccount = () => {
       <h1>Create Account</h1>
       <section className="create-account-details">
         <label className="create-label" htmlFor="dogs-name"></label>
-        <input
-          className="create-input"
-          type="text"
-          placeholder="Name of Pup"
-        ></input>
+        <input type="text" placeholder="Name of Pup"></input>
       </section>
       <section className="create-account-details">
         <label className="create-label" htmlFor="gender"></label>

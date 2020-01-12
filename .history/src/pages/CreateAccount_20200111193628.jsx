@@ -14,15 +14,11 @@ const CreateAccount = () => {
       <h1>Create Account</h1>
       <section className="create-account-details">
         <label className="create-label" htmlFor="dogs-name"></label>
-        <input
-          className="create-input"
-          type="text"
-          placeholder="Name of Pup"
-        ></input>
+        <input type="text" placeholder="Name of Pup"></input>
       </section>
       <section className="create-account-details">
         <label className="create-label" htmlFor="gender"></label>
-        <select className="create-input" type="text" placeholder="Gender">
+        <select type="text" placeholder="Gender">
           <option value="">Select Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>

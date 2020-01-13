@@ -32,13 +32,12 @@ const CreateAccount = () => {
           </select>
         </section>
         <section className="create-account-details">
-          <label className="create-label" htmlFor="age"></label>
-          <select className="create-input" type="text">
-            <option value="age">Age</option>
-            <option value="Puppy">Shy</option>
-            <option value="Adult">Friendly</option>
-            <option value="Senior">Risky</option>
-          </select>
+          <label className="create-label" htmlFor="Age"></label>
+          <input
+            className="create-input"
+            placeholder="Age"
+            input="text"
+          ></input>
         </section>
         <section className="create-account-details">
           <label className="create-label" htmlFor="Breed"></label>
@@ -70,9 +69,8 @@ const CreateAccount = () => {
           <label className="create-label" htmlFor="interested"></label>
           <select className="create-input" type="text">
             <option value="">Interested in Energy Level</option>
-            <option value="shy">Shy</option>
-            <option value="friendly">Friendly</option>
-            <option value="Risky">Risky</option>
+            <option value="hyper">Hyper</option>
+            <option value="tame">Tame</option>
           </select>
         </section>
         <section className="create-account-details">

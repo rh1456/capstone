@@ -32,13 +32,12 @@ const CreateAccount = () => {
           </select>
         </section>
         <section className="create-account-details">
-          <label className="create-label" htmlFor="age"></label>
-          <select className="create-input" type="text">
-            <option value="age">Age</option>
-            <option value="Puppy">Shy</option>
-            <option value="Adult">Friendly</option>
-            <option value="Senior">Risky</option>
-          </select>
+          <label className="create-label" htmlFor="Age"></label>
+          <input
+            className="create-input"
+            placeholder="Age"
+            input="text"
+          ></input>
         </section>
         <section className="create-account-details">
           <label className="create-label" htmlFor="Breed"></label>

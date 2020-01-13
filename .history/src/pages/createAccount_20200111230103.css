@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 62, 5%;
+}
+
+.create-account-div {
+  /* height: 100vh;
+  width: 100%; */
+  /* background: #0f2027; /* fallback for old browsers */
+  /* background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  color: black;
+}
+.create-label {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+.create-input {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  /* display: block; */
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+.submit-account {
+  margin: 1.5rem;
+  align-self: center;
+  background-color: purple;
+  height: 1.8rem;
+  width: 8rem;
+  border-radius: 25px;
+  border: 3px solid black;
+  color: white;
+}
+.create-account-head {
+  display: flex;
+  font-size: 1.5rem;
+}
+.create-account-h1 {
+  align-self: center;
+  padding: 1rem;
+}
+.existing-users-link {
+  font-style: italic;
+  text-decoration: none;
+}

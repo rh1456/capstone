@@ -64,41 +64,42 @@ const CreateAccount = () => {
             <option value="shy">Shy</option>
             <option value="Risky">Risky</option>
           </select>
+          </section>
+          <section className="create-account-details">
+            <label className="create-label" htmlFor="interested"></label>
+            <select className="create-input" type="text">
+              <option value="">Interested in Energy Level</option>
+              <option value="hyper">Hyper</option>
+              <option value="tame">Tame</option>
+            </select>
+            </section>
+            <section className="create-account-details">
+              <label className="create-label" htmlFor="img"></label>
+              <input
+                placeholder="Upload Pic"
+                className="create-input"
+                type="url"
+              ></input>
+            </section>
+            <section className="create-account-details">
+              <label className="create-label" htmlFor="About"></label>
+              <input
+                className="create-input"
+                placeholder="About"
+                type="text"
+              ></input>
+            </section>
+            <section className="create-account-details"></section>
+            <label className="create-label" htmlFor="username"></label>
+            <input
+              placeholder="Email"
+              className="create-input"
+              type="text"
+            ></input>
+          </section>
         </section>
-        <section className="create-account-details">
-          <label className="create-label" htmlFor="interested"></label>
-          <select className="create-input" type="text">
-            <option value="">Interested in Energy Level</option>
-            <option value="hyper">Hyper</option>
-            <option value="tame">Tame</option>
-          </select>
-        </section>
-        <section className="create-account-details">
-          <label className="create-label" htmlFor="img"></label>
-          <input
-            placeholder="Upload Pic"
-            className="create-input"
-            type="url"
-          ></input>
-        </section>
-        <section className="create-account-details">
-          <label className="create-label" htmlFor="About"></label>
-          <input
-            className="create-input"
-            placeholder="About"
-            type="text"
-          ></input>
-        </section>
-        <section className="create-account-details">
-          <label className="create-label" htmlFor="username"></label>
-          <input
-            placeholder="Email"
-            className="create-input"
-            type="text"
-          ></input>
-        </section>
+        <button className="submit-account">Submit</button>
       </div>
-      <button className="submit-account">Submit</button>
     </>
   )
 }

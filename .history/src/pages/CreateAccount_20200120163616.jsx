@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 import './createAccount.css'
 
 const CreateAccount = () => {
@@ -9,7 +8,7 @@ const CreateAccount = () => {
   const [breed, setBreed] = useState('')
   const [size, setSize] = useState('')
   const [about, setAbout] = useState('')
-  const [energyLevels, setEnergyLevels] = useState([])
+  const [energyLevels, setEnergyLevels] = useState()
   const [energyLevelId, setEnergyLevelId] = useState()
 
   const submitData = async event => {
@@ -97,26 +96,18 @@ const CreateAccount = () => {
               }}
               value={size}
               type="text"
-            />
+            ></input>
           </section>
           <section className="create-account-details">
             <label className="create-label" htmlFor="energy"></label>
-            <select
-              onChange={e => {
-                setEnergyLevelId(e.target.value)
-              }}
-              text="dropdown"
-              className="create-input"
-            >
-              <option>Select Your Dog's Energy Level</option>
-              {energyLevels.map(energyLevel => {
-                return (
-                  <option value={energyLevel.id}>{energyLevel.level}</option>
-                )
-              })}
+            <select className="create-input" type="text">
+              <option value="">Select Level</option>
+              <option value="shy">Shy</option>
+              <option value="friendly">Friendly</option>
+              <option value="Risky">Risky</option>
             </select>
           </section>
-          {/* <section className="create-account-details">
+          <section className="create-account-details">
             <label className="create-label" htmlFor="interested"></label>
             <select className="create-input" type="text">
               <option value="">Interested in Energy Level</option>
@@ -124,7 +115,7 @@ const CreateAccount = () => {
               <option value="friendly">Friendly</option>
               <option value="Risky">Risky</option>
             </select>
-          </section> */}
+          </section>
           {/* <section className="create-account-details">
             <label className="create-label" htmlFor="img"></label>
             <input
@@ -138,25 +129,19 @@ const CreateAccount = () => {
             <input
               className="create-input"
               placeholder="About"
-              onChange={e => {
-                setAbout(e.target.value)
-              }}
-              value={about}
               type="text"
             ></input>
           </section>
-          {/* <section className="create-account-details">
+          <section className="create-account-details">
             <label className="create-label" htmlFor="username"></label>
             <input
               placeholder="Email"
               className="create-input"
               type="text"
             ></input>
-          </section> */}
-          <button type="submit" className="submit-account">
-            Submit
-          </button>
+          </section>
         </form>
+        <button className="submit-account">Submit</button>
       </div>
     </>
   )

@@ -35,7 +35,7 @@ const CreateAccount = () => {
   }, [])
 
   return (
-    <>
+    
       <section className="create-account-head">
         <h1 className="create-account-h1">Create Account</h1>
       </section>
@@ -158,7 +158,7 @@ const CreateAccount = () => {
           </button>
         </form>
       </div>
-    </>
+    
   )
 }
 

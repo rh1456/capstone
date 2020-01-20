@@ -85,7 +85,7 @@ const CreateAccount = () => {
               }}
               value={breed}
               input="text"
-            />
+            ></input>
           </section>
           <section className="create-account-details">
             <label className="create-label" htmlFor="Size"></label>
@@ -97,7 +97,7 @@ const CreateAccount = () => {
               }}
               value={size}
               type="text"
-            />
+            ></input>
           </section>
           <section className="create-account-details">
             <label className="create-label" htmlFor="energy"></label>
@@ -111,7 +111,7 @@ const CreateAccount = () => {
               <option>Select Your Dog's Energy Level</option>
               {energyLevels.map(energyLevel => {
                 return (
-                  <option value={energyLevel.id}>{energyLevel.level}</option>
+                  <option value={energyLevel.Id}>{energyLevel.level}</option>
                 )
               })}
             </select>

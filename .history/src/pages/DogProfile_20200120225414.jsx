@@ -1,3 +1,4 @@
+import React from 'react'
 import Z from './z-pic.jpg'
 import Logo from './Logo.png'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
@@ -7,8 +8,10 @@ import Axios from 'axios'
 const DogProfile = () => {
   const [users, setUsers] = useState({})
 
-  const getProfileData = async props => {
-    const resp = await Axios.get(`https://localhost:5001/api/User/3`)
+  const getProfileData = async event => {
+    const resp = await Axios.get(
+      `https://localhost:5001/api/User/${props.match.params.id}`
+    )
 
     setUsers(resp.data)
   }
@@ -25,7 +28,7 @@ const DogProfile = () => {
       <section className="profile-about">
         <h1>{users.name}</h1>
         <span>Young</span>
-        <span>{users.breed}</span>
+        <span>Labrador/Pit Mix</span>
       </section>
       <section className="in-between">
         <img className="profile-logo" src={Logo} alt="" />

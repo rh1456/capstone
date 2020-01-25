@@ -8,7 +8,7 @@ const DogProfile = () => {
   const [users, setUsers] = useState({})
 
   const getProfileData = async props => {
-    const resp = await Axios.get(`https://localhost:5001/api/User/3`)
+    const resp = await Axios.get(`https://localhost:5001/api/User/2`)
 
     setUsers(resp.data)
   }

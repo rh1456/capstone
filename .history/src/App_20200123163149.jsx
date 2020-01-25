@@ -6,7 +6,6 @@ import CreateAccount from './pages/CreateAccount'
 import DogProfile from './pages/DogProfile'
 import PlayDateForm from './pages/PlayDateForm'
 import ProfileSettings from './pages/ProfileSettings'
-import LoginPage from './pages/LoginPage'
 const App = () => {
   return (
     <Router>

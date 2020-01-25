@@ -8,7 +8,9 @@ const DogProfile = () => {
   const [users, setUsers] = useState({})
 
   const getProfileData = async props => {
-    const resp = await Axios.get(`https://localhost:5001/api/User/3`)
+    const resp = await Axios.get(
+      `https://localhost:5001/api/User/${props.match.params.id}`
+    )
 
     setUsers(resp.data)
   }
@@ -23,9 +25,9 @@ const DogProfile = () => {
         <img className="profile-image" src={Z} alt="Z" />
       </header>
       <section className="profile-about">
-        <h1>{users.name}</h1>
+        <h1>{user.name}</h1>
         <span>Young</span>
-        <span>{users.breed}</span>
+        <span>Labrador/Pit Mix</span>
       </section>
       <section className="in-between">
         <img className="profile-logo" src={Logo} alt="" />

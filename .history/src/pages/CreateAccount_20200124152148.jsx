@@ -5,8 +5,8 @@ import './createAccount.css'
 const CreateAccount = () => {
   const [name, setName] = useState('')
 
-  const [ages, setAges] = useState([])
-  const [ageId, setAgeId] = useState()
+  const [ages, setAges] = useState('')
+  const [ageId, setAgeId]
   const [breed, setBreed] = useState('')
   const [size, setSize] = useState('')
   const [about, setAbout] = useState('')
@@ -31,18 +31,9 @@ const CreateAccount = () => {
       genderId: parseInt(genderId),
       energyLevelId: parseInt(energyLevelId),
       interestedEnergyLevelId: parseInt(interestedEnergyLevelId),
-      ageId: parseInt(ageId),
     })
     console.log(resp.data)
   }
-  const getAgeData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/Age')
-    console.log(resp.data)
-    setAges(resp.data)
-  }
-  useEffect(() => {
-    getAgeData()
-  }, [])
 
   const getInterestedData = async () => {
     const resp = await axios.get(

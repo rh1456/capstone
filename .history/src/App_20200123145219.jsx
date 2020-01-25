@@ -6,7 +6,6 @@ import CreateAccount from './pages/CreateAccount'
 import DogProfile from './pages/DogProfile'
 import PlayDateForm from './pages/PlayDateForm'
 import ProfileSettings from './pages/ProfileSettings'
-import LoginPage from './pages/LoginPage'
 const App = () => {
   return (
     <Router>
@@ -44,7 +43,6 @@ const App = () => {
         <Route path="/3" component={DogProfile}></Route>
         <Route path="/4" component={PlayDateForm}></Route>
         <Route path="/5" component={ProfileSettings}></Route>
-        <Route path="/6" component={LoginPage}></Route>
       </Switch>
     </Router>
   )

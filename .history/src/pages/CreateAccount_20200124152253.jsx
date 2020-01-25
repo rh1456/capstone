@@ -35,14 +35,6 @@ const CreateAccount = () => {
     })
     console.log(resp.data)
   }
-  const getAgeData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/Age')
-    console.log(resp.data)
-    setAges(resp.data)
-  }
-  useEffect(() => {
-    getAgeData()
-  }, [])
 
   const getInterestedData = async () => {
     const resp = await axios.get(

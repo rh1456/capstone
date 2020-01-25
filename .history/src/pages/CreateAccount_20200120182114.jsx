@@ -4,9 +4,8 @@ import './createAccount.css'
 
 const CreateAccount = () => {
   const [name, setName] = useState('')
-
-  const [ages, setAges] = useState([])
-  const [ageId, setAgeId] = useState()
+  // const [gender, setGender] = useState('')
+  // const [age, setAge] = useState('')
   const [breed, setBreed] = useState('')
   const [size, setSize] = useState('')
   const [about, setAbout] = useState('')
@@ -14,15 +13,9 @@ const CreateAccount = () => {
   const [genderId, setGenderId] = useState()
   const [energyLevels, setEnergyLevels] = useState([])
   const [energyLevelId, setEnergyLevelId] = useState()
-  const [interestedEnergyLevels, setInterestedEnergyLevels] = useState([])
-  const [interestedEnergyLevelId, setInterestedEnergyLevelId] = useState()
-  // const [userId, setUserId] = useSatate()
-  // const [userCreatedSuccess, setUserCreatedSuccess] = useState(false)
 
   const submitData = async event => {
     event.preventDefault()
-    // const isValid = Object.keys(userId).reduce((acc, key =>
-    //   return acc && userId))
     const resp = await axios.post('https://localhost:5001/api/User/', {
       name: name,
       breed: breed,
@@ -30,31 +23,9 @@ const CreateAccount = () => {
       size: size,
       genderId: parseInt(genderId),
       energyLevelId: parseInt(energyLevelId),
-      interestedEnergyLevelId: parseInt(interestedEnergyLevelId),
-      ageId: parseInt(ageId),
     })
     console.log(resp.data)
   }
-  const getAgeData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/Age')
-    console.log(resp.data)
-    setAges(resp.data)
-  }
-  useEffect(() => {
-    getAgeData()
-  }, [])
-
-  const getInterestedData = async () => {
-    const resp = await axios.get(
-      'https://localhost:5001/api/InterestedEnergyLevel'
-    )
-    console.log(resp.data)
-    setInterestedEnergyLevels(resp.data)
-  }
-
-  useEffect(() => {
-    getInterestedData()
-  }, [])
 
   const getEnergyLevelData = async () => {
     const resp = await axios.get('https://localhost:5001/api/EnergyLevel')
@@ -140,36 +111,6 @@ const CreateAccount = () => {
             />
           </section>
           <section className="create-account-details">
-            <label className="create-label" htmlFor="gender"></label>
-            <select
-              onChange={e => {
-                setAgeId(e.target.value)
-              }}
-              text="dropdown"
-              className="create-input"
-            >
-              <option>Select Your Dog's Age</option>
-              {ages.map(age => {
-                return <option value={age.Id}>{age.youth}</option>
-              })}
-            </select>
-          </section>
-          <section className="create-account-details">
-            <label className="create-label" htmlFor="gender"></label>
-            <select
-              onChange={e => {
-                setGenderId(e.target.value)
-              }}
-              text="dropdown"
-              className="create-input"
-            >
-              <option>Select Your Dog's Gender</option>
-              {genders.map(gender => {
-                return <option value={gender.id}>{gender.sex}</option>
-              })}
-            </select>
-          </section>
-          <section className="create-account-details">
             <label className="create-label" htmlFor="energy"></label>
             <select
               onChange={e => {
@@ -186,25 +127,15 @@ const CreateAccount = () => {
               })}
             </select>
           </section>
-          <section className="create-account-details">
+          {/* <section className="create-account-details">
             <label className="create-label" htmlFor="interested"></label>
-            <select
-              onChange={e => {
-                setInterestedEnergyLevelId(e.target.value)
-              }}
-              text="dropdown"
-              className="create-input"
-            >
-              <option>Select Your Dog's Energy Level</option>
-              {interestedEnergyLevels.map(interestedEnergyLevel => {
-                return (
-                  <option value={interestedEnergyLevel.id}>
-                    {interestedEnergyLevel.interestedIn}
-                  </option>
-                )
-              })}
+            <select className="create-input" type="text">
+              <option value="">Interested in Energy Level</option>
+              <option value="shy">Shy</option>
+              <option value="friendly">Friendly</option>
+              <option value="Risky">Risky</option>
             </select>
-          </section>
+          </section> */}
           {/* <section className="create-account-details">
             <label className="create-label" htmlFor="img"></label>
             <input

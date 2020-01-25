@@ -4,9 +4,8 @@ import './createAccount.css'
 
 const CreateAccount = () => {
   const [name, setName] = useState('')
-
-  const [ages, setAges] = useState([])
-  const [ageId, setAgeId] = useState()
+  // const [gender, setGender] = useState('')
+  // const [age, setAge] = useState('')
   const [breed, setBreed] = useState('')
   const [size, setSize] = useState('')
   const [about, setAbout] = useState('')
@@ -31,27 +30,15 @@ const CreateAccount = () => {
       genderId: parseInt(genderId),
       energyLevelId: parseInt(energyLevelId),
       interestedEnergyLevelId: parseInt(interestedEnergyLevelId),
-      ageId: parseInt(ageId),
     })
     console.log(resp.data)
   }
-  const getAgeData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/Age')
-    console.log(resp.data)
-    setAges(resp.data)
-  }
-  useEffect(() => {
-    getAgeData()
-  }, [])
 
   const getInterestedData = async () => {
     const resp = await axios.get(
       'https://localhost:5001/api/InterestedEnergyLevel'
     )
-    console.log(resp.data)
-    setInterestedEnergyLevels(resp.data)
   }
-
   useEffect(() => {
     getInterestedData()
   }, [])
@@ -143,21 +130,6 @@ const CreateAccount = () => {
             <label className="create-label" htmlFor="gender"></label>
             <select
               onChange={e => {
-                setAgeId(e.target.value)
-              }}
-              text="dropdown"
-              className="create-input"
-            >
-              <option>Select Your Dog's Age</option>
-              {ages.map(age => {
-                return <option value={age.Id}>{age.youth}</option>
-              })}
-            </select>
-          </section>
-          <section className="create-account-details">
-            <label className="create-label" htmlFor="gender"></label>
-            <select
-              onChange={e => {
                 setGenderId(e.target.value)
               }}
               text="dropdown"
@@ -192,19 +164,21 @@ const CreateAccount = () => {
               onChange={e => {
                 setInterestedEnergyLevelId(e.target.value)
               }}
-              text="dropdown"
               className="create-input"
+              type="text"
             >
-              <option>Select Your Dog's Energy Level</option>
+              <option value="">
+                What trait would you like Your Dog's PlayMate to have
+              </option>
               {interestedEnergyLevels.map(interestedEnergyLevel => {
                 return (
-                  <option value={interestedEnergyLevel.id}>
-                    {interestedEnergyLevel.interestedIn}
+                  <option value={interestedEnergyLevel.Id}>
+                    {interestedEnergyLevel.interestedin}
                   </option>
                 )
               })}
             </select>
-          </section>
+          </section>{' '}
           {/* <section className="create-account-details">
             <label className="create-label" htmlFor="img"></label>
             <input

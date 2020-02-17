@@ -25,7 +25,7 @@ const CreateAccount = () => {
     event.preventDefault()
     // const isValid = Object.keys(userId).reduce((acc, key =>
     //   return acc && userId))
-    const resp = await axios.post('https://localhost:5001/auth/signup', {
+    const resp = await axios.post('https://localhost:5001/api/User/', {
       name: name,
       breed: breed,
       about: about,

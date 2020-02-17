@@ -25,7 +25,7 @@ const CreateAccount = () => {
     event.preventDefault()
     // const isValid = Object.keys(userId).reduce((acc, key =>
     //   return acc && userId))
-    const resp = await axios.post('https://localhost:5001/auth/signup', {
+    const resp = await axios.post('https://localhost:5001/api/User/', {
       name: name,
       breed: breed,
       about: about,
@@ -50,7 +50,7 @@ const CreateAccount = () => {
   const getInterestedAgeData = async () => {
     const resp = await axios.get('https://localhost:5001/api/InterestedAge')
     console.log(resp.data)
-    setInterestedAges(resp.data)
+    setInterestedAgeId(resp.data)
   }
 
   useEffect(() => {
@@ -230,7 +230,7 @@ const CreateAccount = () => {
               className="create-input"
             >
               <option>
-                Select Which Age Would Be Compatible With Your Pup?
+                Select Which Temprement Would Be Compatible With Your Pup?
               </option>
               {interestedAges.map(interestedAge => {
                 return (

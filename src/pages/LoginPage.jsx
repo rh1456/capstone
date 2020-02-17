@@ -72,7 +72,7 @@ const LoginPage = () => {
               />
             </section>
 
-            <button className="submit-account">Log In</button>
+            <button className="login-submit">Log In</button>
           </form>
         </div>
       )}
